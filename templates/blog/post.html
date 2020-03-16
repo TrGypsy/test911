@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block resim %}
+
+    <div class="grid-container">
+
+        {% for post in posts %}
+            <div>
+                {% if post.img.url %}
+                    <img class="resim" src="{{ post.img.url }}">
+                {% endif %}
+
+                <br>
+                <a class="ab" href="/home/post/{{ post.id }}">{{ post.title }}</a><br>
+            </div>
+        {% endfor %}
+
+
+    </div>
+
+{% endblock resim %}
+
+
+

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block resim %}
+    <div class="container-umut">
+        <div class="content ">
+
+            {% if post.img.url %}
+                <img class="resim" src="{{ post.img.url }}" >
+            {% endif %}
+            <br>
+            {{ post.title }}<br>
+            {{ post.content }}<br>
+            {{ post.date }}<br>
+
+
+        </div>
+    </div>
+{% endblock resim %}

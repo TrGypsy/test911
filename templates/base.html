@@ -1,0 +1,62 @@
+<!DOCTYPE html> {% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umut</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+
+</head>
+
+<body>
+
+{% block cont %}
+    <div class="menu-container">
+    <input type="checkbox" class="toggler">
+
+    <div class="hamburger">
+        <div></div>
+    </div>
+{% endblock cont %}
+{% block menu %}
+<div class="menu">
+    <div>
+        <div>
+            <ul>
+                <li><a href="{% url 'home'%}">Anasyfa</a></li>
+                <li><a href="{% url 'blog'%}">blog</a></li>
+                <li><a href="{% url 'stein'%}">hakkında</a></li>
+                <li><a href="#">bbb</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock menu %}
+
+{% block kafa %}
+<header class="kafa">
+    <a class="logo" href="{% url 'home'%}"><img id="svg" src="{% static 'svg/index.svg' %}" style="height: 55px; width: 55px"></a>
+
+</header>
+{% endblock kafa %}
+{% block resim %}
+    <div class=" container ">
+        <div class="content ">
+            <h1>Hosgeldınız</h1>
+            <p>ne yaparım bende bılasdasdasdasdasdasd</p>
+            <a href="#"><img src="{% static 'img/r2.jpg' %}" style="height: 100%; width: 100%"></a>
+        </div>
+    </div>
+{% endblock resim %}
+<!-- jQuery -->
+<script src="{% static ' js/jquery.min.js ' %} "></script>
+<!-- jQuery Easing -->
+<script src="{% static 'js/jquery.scrollex.min.js ' %} "></script>
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.bundle.min.js ' %} "></script>
+</body>
+</html>
