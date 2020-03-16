@@ -9,7 +9,7 @@ body {
     font-family: arial, monospace;
     line-height: 1.4;
     height: 100vh;
-    background:#434343;
+    background: #434343;
     color: #fff;
 }
 a {
@@ -26,7 +26,7 @@ header {
     display: grid;
     grid-template-columns: 10% 1fr auto 1fr 10%;
     align-items: center;
-    background-color: black;
+    background-color: #24292e;
     /*   background: rgba(0, 0, 50, 0.2); */
 }
 .logo {
@@ -41,8 +41,8 @@ header {
     color: #ef4e6e;
 }
 .resim{
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 }
 .container{
     height: 100vh;
@@ -193,4 +193,9 @@ header {
        max-height: 140px;
        max-width: 150px;
     }
+    .resim2{
+        height: 300px;
+        width: 300px;
+    }
+
 }

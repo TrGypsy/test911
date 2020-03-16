@@ -5,11 +5,15 @@
         <div class="content ">
 
             {% if post.img.url %}
-                <img class="resim" src="{{ post.img.url }}" >
+                <img class="resim2" src="{{ post.img.url }}" >
             {% endif %}
             <br>
-            {{ post.title }}<br>
-            {{ post.content }}<br>
+            <h2>{{ post.title }}</h2>
+            <hr /> <br>
+            {{ post.content }}
+
+            <hr/>
+            <br>
             {{ post.date }}<br>
 
 
